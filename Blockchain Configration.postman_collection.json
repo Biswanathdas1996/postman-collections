@@ -5,5 +5,44 @@
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "23771894"
 	},
-	"item": []
+	"item": [
+		{
+			"name": "Get configaration",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base URL}}/GetConfig.php",
+					"host": [
+						"{{Base URL}}"
+					],
+					"path": [
+						"GetConfig.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Raw Config for (Admin only)",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "GetRawConfig.php",
+					"host": [
+						"GetRawConfig",
+						"php"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "Base URL",
+			"value": "https://sosal.in/endpoints"
+		}
+	]
 }
