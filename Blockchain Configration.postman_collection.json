@@ -31,12 +31,12 @@
 					"basic": [
 						{
 							"key": "password",
-							"value": "vTzk1do3Qn!g",
+							"value": "{{Auth Password}}",
 							"type": "string"
 						},
 						{
 							"key": "username",
-							"value": "block-admin",
+							"value": "{{Auth Username}}",
 							"type": "string"
 						}
 					]
@@ -60,6 +60,14 @@
 		{
 			"key": "Base URL",
 			"value": "https://sosal.in/endpoints"
+		},
+		{
+			"key": "Auth Username",
+			"value": "block-admin"
+		},
+		{
+			"key": "Auth Password",
+			"value": "vTzk1do3Qn!g"
 		}
 	]
 }
