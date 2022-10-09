@@ -13,21 +13,17 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "http://sosal.in/endpoints/ipfs/fetch-ipfs.php?id=34",
-					"protocol": "http",
+					"raw": "{{Base URL}}/fetch-ipfs.php?id=35",
 					"host": [
-						"sosal",
-						"in"
+						"{{Base URL}}"
 					],
 					"path": [
-						"endpoints",
-						"ipfs",
 						"fetch-ipfs.php"
 					],
 					"query": [
 						{
 							"key": "id",
-							"value": "34"
+							"value": "35"
 						}
 					]
 				}
@@ -44,26 +40,48 @@
 					"formdata": [
 						{
 							"key": "data",
-							"value": "{ \"name\":\"XZY\", \"age\":12}",
+							"value": "{ \"name\":\"XZY\", \"age\":13}",
 							"type": "default"
 						}
 					]
 				},
 				"url": {
-					"raw": "http://sosal.in/endpoints/ipfs/add-Ipfs.php",
-					"protocol": "http",
+					"raw": "{{Base URL}}/add-Ipfs.php",
 					"host": [
-						"sosal",
-						"in"
+						"{{Base URL}}"
 					],
 					"path": [
-						"endpoints",
-						"ipfs",
 						"add-Ipfs.php"
 					]
 				}
 			},
 			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "Base URL",
+			"value": "http://sosal.in/endpoints/ipfs"
 		}
 	]
 }

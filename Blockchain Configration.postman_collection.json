@@ -26,13 +26,30 @@
 		{
 			"name": "Get Raw Config for (Admin only)",
 			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "password",
+							"value": "vTzk1do3Qn!g",
+							"type": "string"
+						},
+						{
+							"key": "username",
+							"value": "block-admin",
+							"type": "string"
+						}
+					]
+				},
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "GetRawConfig.php",
+					"raw": "{{Base URL}}/GetRawConfig.php",
 					"host": [
-						"GetRawConfig",
-						"php"
+						"{{Base URL}}"
+					],
+					"path": [
+						"GetRawConfig.php"
 					]
 				}
 			},
